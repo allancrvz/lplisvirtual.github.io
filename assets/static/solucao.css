@@ -1,0 +1,104 @@
+@import url('/assets/static/style.css');
+
+
+#solucao {
+    display: flex;
+    margin-top: 9.7rem;
+    padding-bottom: 4%;
+}
+
+
+#solucao-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+
+    max-width: 64.9rem;
+
+    justify-content: center;
+}
+
+#solucao-conteudo > div.solucao__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+#solucao-conteudo > div.solucao__buttons {
+    display: flex;
+    gap: 2.9rem;
+}
+
+#solucao > #solucao-imagem { 
+    display: flex;
+    justify-content: flex-start;
+    width: 48%;
+}
+
+#solucao {
+    background-image: url('/assets/imgs/section-solucao/img-cel.png');
+    background-repeat: no-repeat;
+
+  
+
+}
+
+@media screen and (max-width: 620px) {
+    #solucao-conteudo > div.solucao__buttons {
+        display: flex; 
+        flex-wrap: wrap;
+
+    }
+
+    #solucao-conteudo > div.solucao__buttons > button {
+        width: 100%;
+        justify-content: center;
+    }
+
+}   
+
+
+
+@media screen and (max-width: 1278px) {
+    #solucao { 
+        background-image: none;
+        justify-content: center;
+    }
+
+    #solucao-conteudo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #solucao-conteudo div.solucao__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #solucao > #solucao-imagem { 
+       display: none;
+    }
+
+    #como {
+        flex-wrap: wrap;
+    }
+
+    img#img-como {
+        display: none;
+    }
+
+    #solucao #solucao-conteudo div.solucao__buttons {
+        display:flex; 
+        flex: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+
+}
+
+
+

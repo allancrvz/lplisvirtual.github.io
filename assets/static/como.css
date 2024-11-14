@@ -1,0 +1,119 @@
+@import url('/assets/static/style.css');
+
+
+#como  {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+
+    padding-top: 15.2rem;
+}
+
+#como > #como-imagem {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+
+#como > #como-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    background-image: url('/assets/imgs/section-como/como-img-vetores.png');
+    background-repeat: no-repeat    ;
+
+}
+
+.false-img {
+    width: 11.8rem;
+    height: 11.8rem;
+}
+
+#como #como-conteudo .container-conteudo img.img-true {
+    display: none;
+}
+
+#como #como-conteudo .container-conteudo img.img-true.active {
+    display: flex;
+}
+
+#como > #como-conteudo > .container-conteudo > .linha { 
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+   
+}
+
+.container-conteudo div.linha:nth-child(2) {
+    padding-left: 7rem;
+}
+
+.linha-conteudo { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 32.6rem;
+}
+
+
+#como-conteudo > .conteudo-heading > h3 { 
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+#como-conteudo > .conteudo-heading > p { 
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #190a32;
+
+    margin-bottom: 6rem;
+}
+
+/*
+    - ANIMACAO
+    - Animando o Celular para mover para cima e baixo
+
+*/
+
+#como-imagem {
+    animation: subir-descer 3s infinite;
+}
+
+
+@media screen and (max-width: 1260px){
+    #como-conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #como-imagem {
+        display: none;
+    }
+
+
+}
+
+@keyframes subir-descer {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

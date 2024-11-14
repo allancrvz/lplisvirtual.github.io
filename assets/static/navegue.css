@@ -1,0 +1,150 @@
+@import url('/assets/static/style.css');
+
+section#navegue { 
+    margin-top: 16.8rem;   
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#navegue > .heading { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  max-width: 57rem;
+
+  margin-bottom: 4.7rem;
+}
+section#navegue > .heading > * { 
+    text-align: center;
+    
+}
+
+
+/*  ====== BOTÕES  ====================
+   ======== DO CARROSEL =================
+*/
+
+
+#navegue .slider__buttons {
+  display: flex;
+  gap: 2.1rem;
+}
+
+#navegue .slider__buttons button {
+  border: none;
+  background-color: transparent;
+
+}
+
+
+/*  ====== C A R R O S E L ====================
+*/
+
+.carousel {
+  display: flex;
+  width: 100%;
+
+}
+
+#navegue ul.carousel__list {
+  display: flex;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height:647px;
+  justify-content: center;
+  perspective: 300px;
+}
+
+#navegue .carousel__item { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 0px;
+  width: 37rem;
+  height: 100%;
+  /* width: 32.6rem;
+  height: 64.7rem; */
+  border-radius: 12px;
+  
+  position: absolute;
+  transition: all .3s ease-in;
+}
+
+.carousel__item:nth-child(1) {
+  background-image: url(/assets/imgs/telas-carrousel/art-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.carousel__item:nth-child(2) {
+  background-image: url(/assets/imgs/telas-carrousel/art-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.carousel__item:nth-child(3) {
+  background-image: url(/assets/imgs/telas-carrousel/art-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.carousel__item:nth-child(4) {
+  background-image: url(/assets/imgs/telas-carrousel/Artboard\ 4\ copy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.carousel__item:nth-child(5) {
+  background-image: url(/assets/imgs/telas-carrousel/art-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+
+.carousel__item[data-pos="-1"],
+.carousel__item[data-pos="1"] {
+  opacity: 0.8;
+  filter: blur(1px) grayscale(2%);
+}
+
+.carousel__item[data-pos="-1"] {
+  transform: translateX(-40%) scale(.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="1"] {
+  transform: translateX(40%) scale(.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="-2"],
+.carousel__item[data-pos="2"] {
+  opacity: 0.4;
+  filter: blur(1px) grayscale(5%);
+}
+
+.carousel__item[data-pos="-2"] {
+  transform: translateX(-90%) scale(.8);
+  z-index: 3;
+}
+
+.carousel__item[data-pos="2"] {
+  transform: translateX(90%) scale(.8);
+  z-index: 3;
+}
+
+
+.slider__buttons > button:hover {
+  cursor: pointer;
+} 

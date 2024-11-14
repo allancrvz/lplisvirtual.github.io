@@ -1,0 +1,99 @@
+@import url('/assets/static/style.css');
+
+
+footer {
+
+    margin-top: 10rem;
+    width: 100%;
+    padding: 28px 8%; 
+
+    background-image: url('/assets/imgs/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 11.8rem;
+}
+
+footer > div.footer-divs {
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+}
+
+footer > div.footer-divs > p {
+    color: white;
+}
+
+footer > div.footer-divs > h4 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer > .footer-divs > img {
+    margin-bottom: 3rem;
+}
+footer .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-divs .footer__social {
+    display: flex;
+    justify-content: start;
+    margin-left: -1rem;
+    margin-top: 1.4rem;
+}
+
+.footer-divs .footer__social img:hover {
+    cursor: pointer;
+}
+
+.footer-divs .footer-ic { 
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-divs .footer-ic > * {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer > .footer-divs:not(:nth-child(1)) {
+    padding-top: 1.6rem;
+}
+
+
+/*
+    - Media Query 
+    - Footer 
+*/
+
+@media screen and (max-width: 1090px){ 
+    footer#footer div:nth-child(1) {
+        display: none;
+    }
+    footer#footer div:nth-child(4) {
+        display: none;
+    }
+
+    #footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    #footer > div {
+        padding-bottom: 5%;
+    }
+
+}

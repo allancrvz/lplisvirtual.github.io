@@ -1,0 +1,39 @@
+@import url('/assets/static/style.css');
+
+
+#hero {
+    display: flex;
+    min-height: calc(100vh - 161px);
+}
+
+#hero > * {
+    width: 50%;
+}
+
+#cta { 
+    display: flex;
+    flex-direction: column; 
+    gap: 32px; 
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    #banner-tela {
+        display: none;
+    }
+
+    #hero {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

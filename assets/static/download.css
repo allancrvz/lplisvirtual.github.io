@@ -1,0 +1,145 @@
+
+
+/*
+    - Media Query
+    - Para esta seção
+*/
+
+@media screen and (max-width: 616px){
+    section#download > div.download__buttons { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    section#download > .heading > h2 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        margin-bottom: 4%;
+    }
+
+    section#download > div.download__buttons > button {
+        width: 100%;
+        max-width: 40rem;
+        justify-content: center;
+    }
+
+    section#download .bola1, .bola2, .bola3, .bola4, .bola5, .bola6 {
+        display: none;
+    }
+    
+}
+
+
+
+
+/* =====>    Cor do Fundo      <======*/
+/* =====>    id = download      <======*/
+
+section#download { 
+
+    margin-top: 8.3rem;
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+    height: max-content;
+    padding: 3% 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+section#download .heading h2,p {
+    width: 80%;
+    max-width: 57.8rem;
+}
+
+/* =====>    Ajustando layout BOTOES      <======*/
+/* =====>        download__buttons      <======*/
+
+section#download > div.download__buttons { 
+    display: flex;
+    gap: 2.9rem;
+    z-index: 1;
+}
+
+
+
+/* =====>    Bolinhas no Background      <======*/
+/* =====>        definindo divs      <======*/
+
+
+section#download .bola { 
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.9999999999999999) 0%, rgba(255,255,255,0) 100%);
+}
+
+section#download > div.bolinhas {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+    ==> LADO ESQUERDO 
+*/
+.bola1 { 
+    width:206px;
+    height: 206px; 
+    z-index: 0;
+    left: 360px;
+    top: 3895px;
+    opacity: 0.20;
+}
+
+.bola2 { 
+    width:71px;
+    height: 71px; 
+    z-index: 0;
+    left:160px;
+    top: 3783px;
+    opacity: 0.102;
+}
+
+.bola3 { 
+    width:25px;
+    height: 25px; 
+    z-index: 0;
+    left:100px;
+    top: 4003px;
+    opacity: 0.102;
+}
+
+/* 
+    ==> LADO DIREITO 
+*/
+
+.bola4 { 
+    width:85px;
+    height: 85px; 
+    z-index: 0;
+    left:1380px;
+    top: 3863px;
+    opacity: 0.102;
+}
+
+.bola5 { 
+    width:132px;
+    height: 132px; 
+    z-index: 0;
+    left:1560px;
+    top: 3943px;
+    opacity: 0.102;
+}
+
+.bola6 { 
+    width:206px;
+    height: 206px; 
+    z-index: 0;
+    left:1650px;
+    top: 3663px;
+    opacity: 0.102;
+}

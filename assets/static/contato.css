@@ -1,0 +1,122 @@
+
+
+@media screen and (max-width: 1400px){
+    /* #contato #contato_img_bloco {
+        position: relative;
+        opacity: 0.2;
+        z-index: 0;
+        width:0;
+    }
+
+    #contato #contato-form {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+   
+
+    #contato-form > .contato__form {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #contato-form > .heading-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+
+    #contato > #contato_img_bloco { 
+        display: none;
+    }
+
+    #contato > #contato-form {
+        width: 100%;
+    }
+
+    #contato > #contato-form > .heading-form  {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contato > #contato-form > div.contato__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    #contato {
+        background-image: url('/assets/imgs/section-contato/contato_transparency.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .contato_form form > input#form_envio[input="submit"] {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+section#contato {
+    display: flex;
+    margin-top: 9.8%;
+    padding-bottom: 2%;
+}
+
+#contato > * {
+    width: 50%;
+}
+
+#contato #contato-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#contato-form > .heading-form {
+    width: 70%;
+}
+
+
+#contato-form .contato__form {
+    margin-top: 5rem;
+}
+
+#contato-form .contato__form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60rem;
+    gap: 1.8rem;
+}
+
+#contato-form .contato__form form > *:not(:nth-last-child(1)){
+    border-radius: 1rem;
+    filter: drop-shadow(2.5px 4.33px 7.5px rgba(0,0,0,0.1));
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border: none;
+}
+
+input#msg[type="text"] {
+    height: 15rem;
+}

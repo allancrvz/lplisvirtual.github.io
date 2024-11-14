@@ -1,0 +1,309 @@
+
+
+/*
+    FONT IMPORT 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('cadastre.css');
+@import url('car.css');
+@import url('como.css');
+@import url('contato.css');
+@import url('download.css');
+@import url('footer.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('navegue.css');
+@import url('nossos.css');
+@import url('noticias.css');
+@import url('solucao.css');
+@import url('vervideo.css');
+
+* {
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*  ===========================
+    ======    R O O T  ========
+    ===========================
+*/
+
+:root {
+    --main-color: #DA3E87;
+    --second-color: #7d4196;
+    --third-color: #ff3494; 
+    --detail-color: #190a32;
+    --p-color: #666666;
+    --bg-body-color: #ffffff;
+    --button-download-bg-color: #ffffff;
+    --font-sz-text: 1.5rem;
+    --font-sz-h1: 7rem;
+    --font-sz-h2: 3.8rem;
+    --font-sz-h3: 2.2rem    ;
+    --font-sz-h4: 2rem;
+    --font-color-white: #ffffff;
+    --font-w-400: 400;
+    --font-w-500: 500;
+    --font-w-700: 700;
+    
+}
+
+/*
+    Convert rem to 1rem = 10px; 
+*/ 
+
+html { 
+    font-size: 62.5%;
+    width: 62.5%;
+    height: 62.5%;
+
+    scroll-behavior: smooth;
+}
+
+section { 
+    padding: 0px 8%;
+}
+
+
+/*  ===========================
+    ======    B O D Y  ========
+    ===========================
+*/
+
+body {
+    width: 100vw; 
+    height: 100vh;
+    background-color: #ffffff;
+
+    background-image: url('/assets/imgs/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 15% 10%; 
+    overflow-x: hidden;
+    
+   
+}
+
+
+/*  ===========================
+    ======    BU T T O N S   ========
+    ===========================
+*/
+
+
+.btn-download-mobile {
+    border: none; 
+    padding: 10px 35px;
+    border-radius: 32px; 
+    font-weight: var(--font-w-500);
+    color: #ff3494;
+    background-color: #ffffff; 
+    transition: all .7s ease;
+}
+
+.btn-download-mobile:hover { 
+    cursor:pointer;
+    background-color: #ff3494;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-download {
+
+    border: none; 
+    padding: 10px 40px;
+    border-radius: 32px; 
+    font-weight: var(--font-w-500);
+    color: #ff3494;
+    background-color: #ffffff; 
+    transition: all .7s ease;
+
+
+}
+
+.btn-download:hover { 
+    cursor:pointer;
+    background-color: #ff3494;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-leiamais {
+    border:none;
+    width: 145px;
+    height: 45px;
+    color: white;
+    border-radius: 23px;
+    filter: drop-shadow(2.5px 4.33px 12.5px rgba(198,58,149,0.5));
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+    transition:  all .8s ease;
+}
+
+.btn-leiamais:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-image: linear-gradient(90deg, #ac63cc 0%, #d45e95 100%);
+}
+
+/* ==> Botão de Baixe Aqui <===*/
+
+.btn-baixeaqui { 
+    display: flex;
+    align-items: center;
+
+    padding: 0px 2rem;
+
+    gap: 2rem;
+    
+    width: 24.1rem;
+    height: 8.3rem;
+    border:none;
+    border-radius: 1rem;
+    filter: drop-shadow(2.5px 4.33px 12.5px rgba(198,58,149,0.5));
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+
+    transition: all .7s ease;
+}
+
+.btn-baixeaqui:hover {
+    cursor: pointer; 
+    transform: scale(1.1);
+    background-image: linear-gradient(90deg, #ac63cc 0%, #d45e95 100%);
+}   
+
+.btn-baixeaqui div:nth-child(2) {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.4rem;
+}
+    
+.btn-baixeaqui div:nth-child(2) p {
+    color: white;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.btn-baixeaqui div:nth-child(2) p:nth-child(2) {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* ==> G O O G L E   P L A Y  <==*/
+
+
+.btn-googleplay { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 2rem 0px 5.2rem;
+
+    gap: 2rem;
+    
+    width: 28.3rem;
+    height: max-content + 8.3rem;
+    border:none;
+    border-radius: 1rem;
+    border: 1px solid #6541c1;
+    background-color: white;
+
+    transition: all .7s ease;
+}
+
+.btn-googleplay:hover {
+    cursor: pointer; 
+    transform: scale(1.1);
+    background-image: linear-gradient(90deg, #f0e3ee 25%, #fac8f3 100%);
+    border: none;
+}   
+
+.btn-googleplay div:nth-child(2) {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.4rem;
+}
+    
+.btn-googleplay div:nth-child(2) p {
+    color: #7d4196;
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.btn-googleplay div:nth-child(2) p:nth-child(2) {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+
+
+/*  ===========================
+    ======    LIST   ========
+    ===========================
+*/
+
+header li.list-li { 
+    list-style: none;
+}
+
+/* 
+    ====== STYLE OF LINKS , p, buttons patterns
+*/
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-sz-text);
+}
+
+
+h2 {
+    font-size: var(--font-sz-h2);
+    font-weight: 700;
+}
+
+h3 { 
+    font-size: var(--font-sz-h3);
+}
+
+h4 { 
+    font-size: var(--font-sz-h4);
+}
+
+h1 {
+    font-size: var(--font-sz-h1);
+    font-weight: 700;
+    color: var(--detail-color);
+    line-height: 75px;
+}
+
+p {
+    font-size: var(--font-sz-text);
+    color: var(--p-color);
+    line-height: 24px;
+}
+
+.fw-500 { 
+    font-weight: 500;
+} 
+
+.fc-detail {
+    color: var(--detail-color);
+}
+
+
+
+/*  ===========================
+    ======    CLASSES DE COR PARA TEXTO   ========
+    ===========================
+*/
+
+.color-3 { 
+    color: var(--third-color);
+}

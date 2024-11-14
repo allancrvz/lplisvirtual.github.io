@@ -1,0 +1,178 @@
+
+/*
+    - SCROLL ANIMATION 
+    - Fazendo a animação Scroll na horizontal com MOUSE
+*/
+
+@media screen and (max-width: 1174px) {
+    section#noticias #cards-news {
+        display: flex;
+        max-width: 68rem;
+        overflow-x: scroll;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+/*Aqui mexe com a seção inteira no diplay*/
+section#noticias { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10%;
+}
+
+
+/*==== Somente com o heading da section ==== */
+#noticias .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 58rem;
+}
+
+/*==== Aqui começa os cards  ==== */
+#noticias #cards-news {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4.6rem;
+}
+/*==== >>>>>>> DISPLAY DOS CARDS  ==== */
+#noticias #cards-news .noticias-cards {
+    display: flex;
+    flex-direction: column;
+    width: 37rem;
+    border-radius: 1rem;
+    filter: drop-shadow(2.5px 4.33px 12.5px rgba(0,0,0,0.1));
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+/*==== >>>>>>> Aplica um padding interno no subgrupo abaixo da tag IMG  ==== */
+
+
+/*==== >>>>>>> Ajuste da IMAGEM do FULANO  ==== */
+#noticias #cards-news .noticias-cards .card__autor img {
+    width: 4.5rem;
+    height: 4.5rem; 
+    border-radius: 50%;
+}
+
+
+/*==== >>>>>>> Aplica uma BORDA SUPERIOR na  ==== */
+#noticias #cards-news .noticias-cards > img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/*
+    ========= CARD DT =========
+    ========= DATA ESTILO =====
+*/
+
+#cards-news a:nth-child(1) .noticias-cards > .dt {
+    font-size: 1.4rem;
+    color: white;
+    filter: drop-shadow(2.5px 4.33px 7.5px rgba(210,45,74,0.3));
+    background-color: #d22d4a;
+    margin-top: 3.5rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards-news a:nth-child(2) .noticias-cards > .dt {
+    font-size: 1.4rem;
+    color: white;
+    filter: drop-shadow(2.5px 4.33px 7.5px rgba(63,179,204,0.3));
+    background-color: #3fb3cc;
+    margin-top: 3.5rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards-news a:nth-child(3) .noticias-cards > .dt {
+    font-size: 1.4rem;
+    color: white;
+      
+    filter: drop-shadow(2.5px 4.33px 7.5px rgba(213,157,23,0.3));
+    background-color: #d59d17;  
+    margin-top: 3.5rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*====== >>>>>> Aplicando cor na linha de DIVISAO */
+
+section#noticias #cards-news .noticias-cards hr {
+    width: 72%;
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 2.3rem;
+}
+
+
+#noticias #cards-news .card__autor {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+
+
+
+#noticias #cards-news .noticias-cards > h4 { 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: black;
+}
+
+#noticias #cards-news .noticias-cards .card__autor .autor__nome > h4{
+    color: black;   
+}
+
+#cards-news .noticias-cards > *:not(img) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+#cards-news .noticias-cards span.dt {
+    margin-left: 5rem;
+}
+
+
+/*====== Ajustar o Texto do AUTOR__NOME FULANO =====*/
+
+section#noticias .noticias-cards .card__autor > .autor__nome h4 {
+    font-size: 1.5rem;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+section#noticias .noticias-cards .card__autor > .autor__nome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

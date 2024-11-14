@@ -1,0 +1,301 @@
+
+
+/*
+  - Media Screen
+  - Edição do Flex dos CARDS
+
+*/
+
+@media screen and (max-width: 986px) {
+  .nossos__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nossos-planos > .heading {
+    width: 85%;
+  }
+
+  #nossos-planos > .heading > h2, p {
+    width: 85%;
+  }
+
+  
+}
+
+/*
+      Background Linear 
+      Gradient 
+*/
+
+section#nossos-planos .main-border {
+    /* width: 100%; */
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(90deg, rgb(204, 142, 238) 0%, rgba(125,65,150,1) 35%, rgba(255,52,148,1) 100%);
+    padding: 6px;
+    border-radius: 3%;
+
+
+}
+
+
+
+
+/*
+  - Card de Planos
+  - CSS
+
+*/
+
+section#nossos-planos {
+    margin-top: 10.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#nossos-planos > .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 53.2rem;
+
+    margin-bottom: 5.3rem;
+}
+
+section#nossos-planos .nossos__cards { 
+    display: flex;
+    gap: 3.6rem;
+
+}
+
+#trabalho {
+  color: #ff3494;
+}
+
+.nossos__cards .cards {
+    
+    width: 100%;
+    max-width: 26.5rem;
+    /* height: 43.8rem; */
+    border-radius: 1rem;
+    filter: drop-shadow(0px 5px 12.5px rgba(0,0,0,0.1));
+    background-color: #ffffff;
+    padding: 3rem;
+
+}
+
+#nossos-planos .nossos__option {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nossos__option > span { 
+    font-size: 1.8rem;
+    color: #190a32;
+    font-weight: 500;
+}
+
+/* #plano {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: inset 1px 1.732px 1.5px rgba(0,0,0,0.15);
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+} */
+
+/*
+  ===        ====
+  ==== CARDS ====
+  ==-=-=-=-=-=-=-
+*/
+
+.nossos__cards .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nossos__cards .cards > ul.card__list { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards h4 {
+    font-size: 3rem;
+    color: #7d4196;
+    font-weight: 700;
+}
+
+.cards span.valor_plano {
+    font-size: 6rem;
+    color:  #ff3494;
+    font-weight: 600;
+}
+
+.cards span.cifrao {
+    font-size: 2.5rem;
+    color:  #ff3494;
+    font-weight: 600;
+}
+
+.cards span.pormes { 
+    font-size: 1.8rem;
+    color:  #ff3494;
+    font-weight: 600;
+}
+.cards span.pormes {
+    display: flex;
+    align-items: end;
+}
+
+.cards div.preco {
+    display: flex;
+    margin-top: -2.5rem;
+}
+
+#nossos-planos .cards p {
+  font-size: 1.8rem;
+  color: #7d4196;
+  font-weight: 500;
+  margin-bottom: -1.9rem;
+}
+
+#nossos-planos .cards .card__list li.list-li::marker { 
+  list-style: square;
+  color: #ff3494;
+  font-size: 2.5rem;
+}
+
+#nossos-planos .cards .card__list li.list-li {
+  list-style: square;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#nossos-planos .cards button { 
+    width: 14.5rem;
+    border-radius: 2.3rem; 
+    filter: drop-shadow(2.5px 4.33px 12.5px rgba(198,58,149,0.5));
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    padding: 1rem;
+
+    margin-top: 0.8rem;
+
+}   
+
+#nossos-planos .cards button:hover {
+  cursor: pointer;
+}
+
+/*
+    ==> checkbox <== 
+*/
+
+.checkbox-wrapper-7 .tgl {
+    display: none;
+  }
+  .checkbox-wrapper-7 .tgl,
+  .checkbox-wrapper-7 .tgl:after,
+  .checkbox-wrapper-7 .tgl:before,
+  .checkbox-wrapper-7 .tgl *,
+  .checkbox-wrapper-7 .tgl *:after,
+  .checkbox-wrapper-7 .tgl *:before,
+  .checkbox-wrapper-7 .tgl + .tgl-btn {
+    box-sizing: border-box;
+  }
+  .checkbox-wrapper-7 .tgl::-moz-selection,
+  .checkbox-wrapper-7 .tgl:after::-moz-selection,
+  .checkbox-wrapper-7 .tgl:before::-moz-selection,
+  .checkbox-wrapper-7 .tgl *::-moz-selection,
+  .checkbox-wrapper-7 .tgl *:after::-moz-selection,
+  .checkbox-wrapper-7 .tgl *:before::-moz-selection,
+  .checkbox-wrapper-7 .tgl + .tgl-btn::-moz-selection,
+  .checkbox-wrapper-7 .tgl::selection,
+  .checkbox-wrapper-7 .tgl:after::selection,
+  .checkbox-wrapper-7 .tgl:before::selection,
+  .checkbox-wrapper-7 .tgl *::selection,
+  .checkbox-wrapper-7 .tgl *:after::selection,
+  .checkbox-wrapper-7 .tgl *:before::selection,
+  .checkbox-wrapper-7 .tgl + .tgl-btn::selection {
+    background: none;
+  }
+  .checkbox-wrapper-7 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 6em;
+    height: 3em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .checkbox-wrapper-7 .tgl + .tgl-btn:after,
+  .checkbox-wrapper-7 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+  }
+  .checkbox-wrapper-7 .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .checkbox-wrapper-7 .tgl + .tgl-btn:before {
+    display: none;
+  }
+  .checkbox-wrapper-7 .tgl:checked + .tgl-btn:after {
+    left: 50%;
+  }
+
+  .checkbox-wrapper-7 .tgl-ios + .tgl-btn {
+    background: #fbfbfb;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+    border: 1px solid #e8eae9;
+  }
+  .checkbox-wrapper-7 .tgl-ios + .tgl-btn:after {
+    border-radius: 2em;
+    background: #fbfbfb;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+  }
+  .checkbox-wrapper-7 .tgl-ios + .tgl-btn:hover:after {
+    will-change: padding;
+  }
+  .checkbox-wrapper-7 .tgl-ios + .tgl-btn:active {
+    box-shadow: inset 0 0 0 2em #e8eae9;
+  }
+  .checkbox-wrapper-7 .tgl-ios + .tgl-btn:active:after {
+    padding-right: 0.8em;
+  }
+  .checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn {
+    background-image: linear-gradient(90deg, #7d4196 0%, #ff3494 100%);
+  }
+  .checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn:active {
+    box-shadow: none;
+  }
+  .checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn:active:after {
+    margin-left: -0.8em;
+  }
